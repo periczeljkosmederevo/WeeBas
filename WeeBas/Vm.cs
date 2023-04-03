@@ -56,6 +56,10 @@ namespace WeeBas
                 if (line.Number != null)
                 {
                     var lineNumber = Evaluate(line.Number);
+                    if( program.ContainsKey( lineNumber ) )
+                    {
+                        program.Remove( lineNumber );
+                    }
                     program.Add(lineNumber, line);
                 }
                 else
