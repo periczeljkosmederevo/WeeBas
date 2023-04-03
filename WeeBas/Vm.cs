@@ -138,6 +138,11 @@ namespace WeeBas
             programCounter = subStack.Pop();
         }
 
+        public void Cls()
+        {
+            Console.Clear();
+        }
+
         public void Clear()
         {
             End();
