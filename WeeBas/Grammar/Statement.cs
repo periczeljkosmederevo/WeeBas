@@ -11,7 +11,7 @@ namespace WeeBas.Grammar
 
         private static readonly IList<CommandParser> Parsers = new List<CommandParser>
         {
-            Print.Parse, If.Parse, Goto.Parse, InputCmd.Parse, Let.Parse, Gosub.Parse, Return.Parse, Clear.Parse, ListCmd.Parse, Run.Parse, End.Parse, Save.Parse, Load.Parse, Rem.Parse,
+            Print.Parse, If.Parse, Goto.Parse, InputCmd.Parse, Let.Parse, Gosub.Parse, Return.Parse, Cls.Parse, Clear.Parse, ListCmd.Parse, Run.Parse, End.Parse, Save.Parse, Load.Parse, Rem.Parse,
         };
 
         private Statement(ICommand command)
@@ -30,7 +30,7 @@ namespace WeeBas.Grammar
                 }
             }
             output.WriteLine(MessageFormatter.Expected(Print.Keyword, If.KeywordIf, Goto.Keyword, InputCmd.Keyword, Let.Keyword, Gosub.Keyword, 
-                Return.Keyword, Clear.Keyword, ListCmd.Keyword, Run.Keyword, End.Keyword, Save.Keyword, Load.Keyword, Rem.Keyword));
+                Return.Keyword, Cls.Keyword, Clear.Keyword, ListCmd.Keyword, Run.Keyword, End.Keyword, Save.Keyword, Load.Keyword, Rem.Keyword));
             return null;
         }
     }

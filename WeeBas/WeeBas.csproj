@@ -51,6 +51,7 @@
     <Content Include="guess.bas">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
+    <Compile Include="Grammar\Cls.cs" />
     <Compile Include="Grammar\Digit.cs" />
     <Compile Include="EntryClass.cs" />
     <Compile Include="Grammar\Clear.cs" />
